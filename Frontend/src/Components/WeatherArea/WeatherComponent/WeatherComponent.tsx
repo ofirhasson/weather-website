@@ -7,7 +7,7 @@ import "./WeatherComponent.css";
 export function WeatherComponent(): JSX.Element {
     return (
         <div className="WeatherComponent">
-            <div className="WeatherDiv">
+            <div className="WeatherDiv" aria-label="Weather-info" role="region">
                 <DetailsComponent />
                 <DegreesComponent />
                 <WeatherDetailsComponent />

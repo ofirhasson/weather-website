@@ -23,8 +23,8 @@ export function ErrorNotification({ err, onClose }: ErrorNotificationProps): JSX
     }, [onClose]);
 
     return (
-        <div className="ErrorNotification">
-            <span className="error-icon">&#9888;</span>
+        <div className="ErrorNotification" role="alert" aria-live="assertive">
+            <span className="error-icon" aria-hidden="true">&#9888;</span>
             <span className="error-message">{message}</span>
         </div>
     );

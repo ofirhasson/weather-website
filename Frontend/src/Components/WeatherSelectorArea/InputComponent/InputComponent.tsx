@@ -8,10 +8,18 @@ export function InputComponent(): JSX.Element {
 
     return (
         <div className="InputComponent">
-            <label>City name</label>
+            <label htmlFor="city-input">City name</label>
             <div className="input-container">
-                <input type="text" onChange={handleInputChange} value={city} />
-                <button onClick={handleClick}>Check</button>
+                <input
+                    id="city-input"
+                    type="text"
+                    aria-label="Enter city name"
+                    onChange={handleInputChange}
+                    value={city} />
+                <button
+                    onClick={handleClick}
+                    aria-label="Check weather for entered city">
+                    Check</button>
             </div>
             {error && <ErrorNotification err={error} onClose={clearError} />}
         </div>
