@@ -1,0 +1,27 @@
+.WeatherHoursComponent {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 2vh;
+}
+.WeatherHoursComponent>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.WeatherHoursComponent>div span:first-child {
+    color: #A8C6CB;
+}
+
+.WeatherHoursComponent>div span:last-child {
+    color: #FFFFFF;
+}
+
+@media (max-width: 350px) {
+    .WeatherHoursComponent {
+        gap: 5%;
+    }
+}

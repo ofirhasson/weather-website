@@ -1,0 +1,28 @@
+.DegreesComponent {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.degreesSpan{
+    font-size: 15vh;
+    color: #FFFFFF;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionSpan{
+    font-size: 3vh;
+    color: #E8F1F2;
+}
+
+@media (max-width: 1050px) {
+    .degreesSpan {
+        font-size: 10vh;
+        height: 12vh;
+    }
+}

@@ -1,0 +1,35 @@
+.WeatherDetailsComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+    font-size: 2vh;
+}
+
+.WeatherDetailsComponent>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.WeatherDetailsComponent>div span:first-child {
+    color: #A8C6CB;
+}
+
+.WeatherDetailsComponent>div span:last-child {
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+    .WeatherDetailsComponent {
+        gap: 20%;
+    }
+}
+
+@media (max-width: 350px) {
+    .WeatherDetailsComponent {
+        gap: 10%;
+    }
+}

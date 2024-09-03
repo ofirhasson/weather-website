@@ -1,0 +1,22 @@
+.DetailsComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontSize3{
+    font-size: 3vh;
+}
+
+.fontSize2{
+    font-size: 2vh;
+}
+
+.white {
+    color: #E8F1F2;
+}
+
+.gray {
+    color: #A8C6CB;
+}
