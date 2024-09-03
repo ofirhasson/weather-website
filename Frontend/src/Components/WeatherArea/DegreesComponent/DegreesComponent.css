@@ -1,11 +1,11 @@
 .DegreesComponent {
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.degreesSpan{
+.degreesSpan {
     font-size: 15vh;
     color: #FFFFFF;
     height: 130px;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.descriptionSpan{
+.descriptionSpan {
     font-size: 3vh;
     color: #E8F1F2;
 }

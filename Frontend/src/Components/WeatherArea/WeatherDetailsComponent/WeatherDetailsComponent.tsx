@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
-import "./WeatherDetailsComponent.css";
 import { AppState } from "../../../Redux/AppState";
+import "./WeatherDetailsComponent.css";
 
 export function WeatherDetailsComponent(): JSX.Element {
     const weather = useSelector((appState: AppState) => appState.weather);
+    if (!weather)
+        return null;
     return (
         <div className="WeatherDetailsComponent" aria-labelledby="weather-details-heading">
             <div aria-labelledby="precipitation-label">

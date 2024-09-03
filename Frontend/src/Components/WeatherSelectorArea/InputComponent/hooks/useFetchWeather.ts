@@ -17,13 +17,12 @@ export const useFetchWeather = () => {
             setCity("");
             setError(null);
         } catch (err: any) {
-            console.log(err);
             setError(err);
         }
     }
 
     const clearError = () => {
-        setError(null); // Clear the error manually
+        setError(null);
     }
 
     return {
@@ -31,6 +30,7 @@ export const useFetchWeather = () => {
         handleClick,
         city,
         error,
-        clearError
+        clearError,
+        setError
     }
 }

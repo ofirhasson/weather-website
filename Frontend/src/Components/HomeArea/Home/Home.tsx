@@ -6,12 +6,13 @@ import { useInitialWeather } from "./hooks/useInitialWeather";
 
 export function Home(): JSX.Element {
 
-    useInitialWeather();
+    const { error, clearError } = useInitialWeather();
 
     return (
         <div className="Home">
             <WeatherSelectorComponent />
             <WeatherComponent />
+            {error && <ErrorNotification err={error} onClose={clearError} />}
         </div>
     );
 }

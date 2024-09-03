@@ -10,20 +10,20 @@
     position: relative;
 }
 
-.InputComponent > .input-container> input {
+.InputComponent>.input-container>input {
     height: 50px;
     font-size: 3vh;
     border-radius: 10px;
-    border: none;   
+    border: none;
     box-sizing: border-box;
     flex: 1;
 }
 
-.InputComponent >.input-container> button {
+.InputComponent>.input-container>button {
     position: absolute;
     right: 10px;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     height: 30px;
     border: none;
     background-color: #046B3B;
@@ -34,20 +34,20 @@
 }
 
 @media (max-width: 520px) {
-    .InputComponent >.input-container> button {
+    .InputComponent>.input-container>button {
         left: 80%;
         width: fit-content;
     }
 }
 
 @media (max-width: 450px) {
-    .InputComponent >.input-container> button {
+    .InputComponent>.input-container>button {
         left: 75%;
     }
 }
 
 @media (max-width: 350px) {
-    .InputComponent > .input-container> input {
+    .InputComponent>.input-container>input {
         width: 300px;
     }
 }

@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
-import "./DetailsComponent.css";
 import { AppState } from "../../../Redux/AppState";
+import "./DetailsComponent.css";
 
 export function DetailsComponent(): JSX.Element {
     const weather = useSelector((appState: AppState) => appState.weather);
+    if (!weather)
+        return null;
     return (
         <div className="DetailsComponent" aria-label="Location and Date Details">
             <span

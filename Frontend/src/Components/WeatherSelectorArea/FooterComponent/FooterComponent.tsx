@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
-import "./FooterComponent.css";
 import { AppState } from "../../../Redux/AppState";
 
 export function FooterComponent(): JSX.Element {
     const weather = useSelector((appState: AppState) => appState.weather);
+    if (!weather)
+        return null;
     return (
         <div
             className="FooterComponent"

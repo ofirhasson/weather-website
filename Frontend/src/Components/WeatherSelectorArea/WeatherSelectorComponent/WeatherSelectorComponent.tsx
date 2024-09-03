@@ -1,7 +1,7 @@
-import "./WeatherSelectorComponent.css";
-import logo from "../../../Assets/Images/logo.svg"
-import { InputComponent } from "../InputComponent/InputComponent";
+import logo from "../../../Assets/Images/logo.svg";
 import { FooterComponent } from "../FooterComponent/FooterComponent";
+import { InputComponent } from "../InputComponent/InputComponent";
+import "./WeatherSelectorComponent.css";
 
 export function WeatherSelectorComponent(): JSX.Element {
     return (
